@@ -14,6 +14,10 @@
 
   <style>
 
+    /* =========================
+       GENERAL
+    ========================== */
+
     * {
       box-sizing: border-box;
     }
@@ -26,6 +30,7 @@
       margin: 0;
       background: #ffffff;
       color: #222222;
+
       font-family:
         -apple-system,
         BlinkMacSystemFont,
@@ -34,6 +39,7 @@
         Helvetica,
         Arial,
         sans-serif;
+
       line-height: 1.7;
     }
 
@@ -41,10 +47,16 @@
       color: inherit;
     }
 
+
+    /* =========================
+       NAVIGATION
+    ========================== */
+
     nav {
       position: sticky;
       top: 0;
       z-index: 1000;
+
       background: rgba(255, 255, 255, 0.96);
       border-bottom: 1px solid #e6e6e6;
     }
@@ -53,6 +65,7 @@
       max-width: 1000px;
       margin: 0 auto;
       padding: 17px 30px;
+
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -62,6 +75,7 @@
       font-family: Georgia, "Times New Roman", serif;
       font-size: 20px;
       font-weight: 600;
+
       text-decoration: none;
       color: #222;
     }
@@ -69,7 +83,7 @@
     .nav-links {
       display: flex;
       align-items: center;
-      gap: 28px;
+      gap: 26px;
     }
 
     .nav-links a {
@@ -82,14 +96,29 @@
       color: #000;
     }
 
+
+    /* =========================
+       MAIN
+    ========================== */
+
     main {
       max-width: 940px;
       margin: 0 auto;
       padding: 80px 30px 40px 30px;
     }
 
+    section {
+      margin-bottom: 80px;
+      scroll-margin-top: 90px;
+    }
+
+
+    /* =========================
+       INTRO
+    ========================== */
+
     .intro {
-      margin-bottom: 90px;
+      margin-bottom: 95px;
     }
 
     .intro-grid {
@@ -101,9 +130,11 @@
 
     h1 {
       margin: 0 0 10px 0;
+
       font-family: Georgia, "Times New Roman", serif;
       font-size: 52px;
       font-weight: 500;
+
       line-height: 1.15;
       letter-spacing: -1px;
     }
@@ -131,6 +162,11 @@
       margin-bottom: 14px;
     }
 
+
+    /* =========================
+       PROFILE PHOTO
+    ========================== */
+
     .photo-container {
       display: flex;
       justify-content: center;
@@ -139,11 +175,18 @@
     .profile-photo {
       width: 280px;
       height: 350px;
+
       object-fit: cover;
       object-position: center 42%;
+
       border-radius: 8px;
       display: block;
     }
+
+
+    /* =========================
+       BUTTONS
+    ========================== */
 
     .links {
       margin-top: 28px;
@@ -151,14 +194,19 @@
 
     .button {
       display: inline-block;
+
       padding: 8px 16px;
       margin-right: 8px;
       margin-bottom: 8px;
+
       border: 1px solid #333;
       border-radius: 5px;
+
       color: #222;
       text-decoration: none;
+
       font-size: 14px;
+
       transition:
         background 0.2s ease,
         color 0.2s ease;
@@ -169,22 +217,25 @@
       color: #fff;
     }
 
-    section {
-      margin-bottom: 80px;
-      scroll-margin-top: 90px;
-    }
+
+    /* =========================
+       SECTION HEADINGS
+    ========================== */
 
     h2 {
       margin: 0 0 30px 0;
       padding-bottom: 10px;
+
       font-family: Georgia, "Times New Roman", serif;
       font-size: 31px;
       font-weight: 500;
+
       border-bottom: 1px solid #dddddd;
     }
 
     h3 {
       margin: 30px 0 8px 0;
+
       font-family: Georgia, "Times New Roman", serif;
       font-size: 22px;
       font-weight: 600;
@@ -194,6 +245,11 @@
       font-size: 16.5px;
     }
 
+
+    /* =========================
+       RESEARCH
+    ========================== */
+
     .paper {
       margin-bottom: 45px;
     }
@@ -202,6 +258,7 @@
       font-family: Georgia, "Times New Roman", serif;
       font-size: 22px;
       font-weight: 600;
+
       margin-bottom: 5px;
     }
 
@@ -224,6 +281,7 @@
     .status {
       color: #777;
       font-style: italic;
+
       margin-top: 3px;
       margin-bottom: 18px;
     }
@@ -235,11 +293,59 @@
 
     .abstract p {
       margin-top: 0;
+      margin-bottom: 16px;
     }
 
     .research-interests {
       color: #444;
     }
+
+
+    /* =========================
+       EDUCATION
+    ========================== */
+
+    .education-item {
+      margin-bottom: 27px;
+    }
+
+    .education-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .education-degree {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 20px;
+      font-weight: 600;
+      color: #222;
+    }
+
+    .education-school {
+      margin-top: 2px;
+      color: #444;
+      font-size: 16.5px;
+    }
+
+    .education-date {
+      margin-top: 1px;
+      color: #777;
+      font-size: 15px;
+    }
+
+
+    /* =========================
+       OUTSIDE ECONOMICS
+    ========================== */
+
+    .outside-text {
+      color: #444;
+      max-width: 800px;
+    }
+
+
+    /* =========================
+       CONTACT
+    ========================== */
 
     .contact p {
       color: #444;
@@ -256,14 +362,27 @@
       border-color: #000;
     }
 
+
+    /* =========================
+       FOOTER
+    ========================== */
+
     footer {
       max-width: 940px;
       margin: 0 auto;
+
       padding: 28px 30px 40px 30px;
+
       border-top: 1px solid #e5e5e5;
+
       color: #888;
       font-size: 13px;
     }
+
+
+    /* =========================
+       MOBILE
+    ========================== */
 
     @media (max-width: 760px) {
 
@@ -312,9 +431,16 @@
     }
 
   </style>
+
 </head>
 
+
 <body>
+
+
+  <!-- =========================
+       NAVIGATION
+  ========================== -->
 
   <nav>
 
@@ -327,6 +453,7 @@
         Kardelen Sural
       </a>
 
+
       <div class="nav-links">
 
         <a href="#about">
@@ -335,6 +462,14 @@
 
         <a href="#research">
           Research
+        </a>
+
+        <a href="#education">
+          Education
+        </a>
+
+        <a href="#outside">
+          Outside Economics
         </a>
 
         <a href="#contact">
@@ -347,7 +482,18 @@
 
   </nav>
 
+
+
+  <!-- =========================
+       MAIN CONTENT
+  ========================== -->
+
   <main>
+
+
+    <!-- =========================
+         ABOUT
+    ========================== -->
 
     <section
       class="intro"
@@ -356,19 +502,25 @@
 
       <div class="intro-grid">
 
+
+        <!-- LEFT -->
+
         <div>
 
           <h1>
             Kardelen Sural
           </h1>
 
+
           <div class="position">
             PhD Student in Economics
           </div>
 
+
           <div class="institution">
             Carnegie Mellon University
           </div>
+
 
           <div class="intro-text">
 
@@ -385,6 +537,7 @@
 
           </div>
 
+
           <div class="links">
 
             <a
@@ -394,10 +547,12 @@
               Email
             </a>
 
+
             <a
               class="button"
               href="https://github.com/kardelensural"
               target="_blank"
+              rel="noopener noreferrer"
             >
               GitHub
             </a>
@@ -405,6 +560,9 @@
           </div>
 
         </div>
+
+
+        <!-- RIGHT / PHOTO -->
 
         <div class="photo-container">
 
@@ -416,9 +574,17 @@
 
         </div>
 
+
       </div>
 
     </section>
+
+
+
+
+    <!-- =========================
+         RESEARCH
+    ========================== -->
 
     <section id="research">
 
@@ -426,11 +592,13 @@
         Research
       </h2>
 
+
       <div class="paper">
 
         <div class="paper-title">
           Unions in the Age of Automation
         </div>
+
 
         <div class="coauthor">
 
@@ -439,6 +607,7 @@
           <a
             href="https://www.ardagitmez.com"
             target="_blank"
+            rel="noopener noreferrer"
           >
             A. Arda Gitmez
           </a>
@@ -448,15 +617,18 @@
           <a
             href="https://www.ozlemkina.com"
             target="_blank"
+            rel="noopener noreferrer"
           >
             Özlem Kına
           </a>
 
         </div>
 
+
         <div class="status">
           Working Paper
         </div>
+
 
         <div class="abstract">
 
@@ -491,6 +663,7 @@
 
       </div>
 
+
       <h3>
         Research Interests
       </h3>
@@ -502,6 +675,90 @@
 
     </section>
 
+
+
+
+    <!-- =========================
+         EDUCATION
+    ========================== -->
+
+    <section id="education">
+
+      <h2>
+        Education
+      </h2>
+
+
+      <div class="education-item">
+
+        <div class="education-degree">
+          Ph.D. in Economics
+        </div>
+
+        <div class="education-school">
+          Carnegie Mellon University, Tepper School of Business
+        </div>
+
+        <div class="education-date">
+          2026 – Present
+        </div>
+
+      </div>
+
+
+      <div class="education-item">
+
+        <div class="education-degree">
+          M.A. in Economics
+        </div>
+
+        <div class="education-school">
+          Bilkent University
+        </div>
+
+      </div>
+
+
+      <div class="education-item">
+
+        <div class="education-degree">
+          B.A. in Economics
+        </div>
+
+        <div class="education-school">
+          Bilkent University
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+
+    <!-- =========================
+         OUTSIDE ECONOMICS
+    ========================== -->
+
+    <section id="outside">
+
+      <h2>
+        Outside Economics
+      </h2>
+
+      <p class="outside-text">
+        Outside economics, I play the violin, practice Pilates, and enjoy film.
+      </p>
+
+    </section>
+
+
+
+
+    <!-- =========================
+         CONTACT
+    ========================== -->
+
     <section
       id="contact"
       class="contact"
@@ -511,10 +768,12 @@
         Contact
       </h2>
 
+
       <p>
         Carnegie Mellon University<br>
         Tepper School of Business
       </p>
+
 
       <p>
 
@@ -526,6 +785,7 @@
 
       </p>
 
+
       <p>
 
         GitHub:
@@ -533,6 +793,7 @@
         <a
           href="https://github.com/kardelensural"
           target="_blank"
+          rel="noopener noreferrer"
         >
           github.com/kardelensural
         </a>
@@ -541,11 +802,19 @@
 
     </section>
 
+
   </main>
+
+
+
+  <!-- =========================
+       FOOTER
+  ========================== -->
 
   <footer>
     © 2026 Kardelen Sural
   </footer>
+
 
 </body>
 
