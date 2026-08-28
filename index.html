@@ -1,41 +1,446 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kardelen Sural</title>
+
+  <title>Kardelen Sural | Economics</title>
+
+  <meta name="description"
+        content="Kardelen Sural - PhD Student in Economics at Carnegie Mellon University.">
+
+  <style>
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+                   Roboto, Helvetica, Arial, sans-serif;
+      color: #222;
+      background: #ffffff;
+      line-height: 1.7;
+    }
+
+    /* Navigation */
+
+    nav {
+      border-bottom: 1px solid #e5e5e5;
+      background: rgba(255,255,255,0.95);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .nav-container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 17px 25px;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav-name {
+      font-size: 19px;
+      font-weight: 600;
+      text-decoration: none;
+      color: #222;
+    }
+
+    .nav-links a {
+      margin-left: 28px;
+      text-decoration: none;
+      color: #555;
+      font-size: 15px;
+    }
+
+    .nav-links a:hover {
+      color: #000;
+    }
+
+
+    /* Main container */
+
+    main {
+      max-width: 900px;
+      margin: auto;
+      padding: 80px 30px;
+    }
+
+
+    /* Intro */
+
+    .intro {
+      margin-bottom: 90px;
+    }
+
+    h1 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 52px;
+      margin: 0 0 12px 0;
+      font-weight: 500;
+      letter-spacing: -1px;
+    }
+
+    .position {
+      font-size: 21px;
+      color: #444;
+      margin-bottom: 4px;
+    }
+
+    .institution {
+      font-size: 18px;
+      color: #666;
+      margin-bottom: 30px;
+    }
+
+    .intro-text {
+      max-width: 760px;
+      font-size: 18px;
+      color: #444;
+    }
+
+
+    /* Buttons */
+
+    .links {
+      margin-top: 30px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 9px 17px;
+      margin-right: 9px;
+      margin-bottom: 8px;
+
+      border: 1px solid #333;
+      border-radius: 5px;
+
+      text-decoration: none;
+      color: #222;
+      font-size: 14px;
+
+      transition: 0.2s;
+    }
+
+    .button:hover {
+      background: #222;
+      color: white;
+    }
+
+
+    /* Sections */
+
+    section {
+      margin-bottom: 80px;
+    }
+
+    h2 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-weight: 500;
+      font-size: 31px;
+      margin-bottom: 30px;
+
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 10px;
+    }
+
+    h3 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 22px;
+      font-weight: 600;
+      margin-bottom: 5px;
+    }
+
+    p {
+      font-size: 16.5px;
+    }
+
+
+    /* Research */
+
+    .paper {
+      margin-bottom: 45px;
+    }
+
+    .paper-title {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 21px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .coauthor {
+      color: #555;
+      margin-bottom: 3px;
+    }
+
+    .status {
+      font-style: italic;
+      color: #777;
+      margin-bottom: 15px;
+    }
+
+    .abstract {
+      color: #444;
+      max-width: 800px;
+    }
+
+
+    /* Research interests */
+
+    .interests {
+      color: #444;
+    }
+
+
+    /* Contact */
+
+    .contact a {
+      color: #333;
+      text-decoration: none;
+      border-bottom: 1px solid #aaa;
+    }
+
+    .contact a:hover {
+      border-color: #222;
+    }
+
+
+    /* Footer */
+
+    footer {
+      max-width: 900px;
+      margin: auto;
+      padding: 30px;
+      border-top: 1px solid #e5e5e5;
+
+      color: #888;
+      font-size: 13px;
+    }
+
+
+    /* Mobile */
+
+    @media (max-width: 700px) {
+
+      main {
+        padding: 50px 22px;
+      }
+
+      h1 {
+        font-size: 40px;
+      }
+
+      .nav-links {
+        display: none;
+      }
+
+    }
+
+  </style>
+
 </head>
+
 
 <body>
 
-  <h1>Kardelen Sural</h1>
 
-  <p>
-    PhD Student in Economics<br>
-    Carnegie Mellon University
-  </p>
+<nav>
 
-  <h2>About Me</h2>
+  <div class="nav-container">
 
-  <p>
-    I am a PhD student in Economics at Carnegie Mellon University.
-    My research interests include labor economics, political economy,
-    technological change, automation, unions, and inequality.
-  </p>
+    <a href="#" class="nav-name">
+      Kardelen Sural
+    </a>
 
-  <h2>Research</h2>
+    <div class="nav-links">
 
-  <p>
-    <strong>Automation, Unionization, and Worker Welfare</strong><br>
-    with A. Arda Gitmez<br>
-    Working Paper
-  </p>
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#cv">CV</a>
+      <a href="#contact">Contact</a>
 
-  <h2>Contact</h2>
+    </div>
 
-  <p>
-    Email: ksural@andrew.cmu.edu
-  </p>
+  </div>
+
+</nav>
+
+
+
+<main>
+
+
+  <!-- INTRO -->
+
+  <section class="intro" id="about">
+
+    <h1>Kardelen Sural</h1>
+
+    <div class="position">
+      PhD Student in Economics
+    </div>
+
+    <div class="institution">
+      Carnegie Mellon University
+    </div>
+
+
+    <div class="intro-text">
+
+      <p>
+        I am a PhD student in Economics at Carnegie Mellon University.
+        My research interests lie at the intersection of labor economics,
+        political economy, and technological change.
+      </p>
+
+      <p>
+        I am particularly interested in automation, labor-market institutions,
+        unions, and inequality.
+      </p>
+
+    </div>
+
+
+    <div class="links">
+
+      <a class="button"
+         href="mailto:ksural@andrew.cmu.edu">
+         Email
+      </a>
+
+      <a class="button"
+         href="Kardelen_Sural_CV.pdf"
+         target="_blank">
+         CV
+      </a>
+
+      <a class="button"
+         href="https://github.com/kardelensural"
+         target="_blank">
+         GitHub
+      </a>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- RESEARCH -->
+
+  <section id="research">
+
+    <h2>Research</h2>
+
+
+    <div class="paper">
+
+      <div class="paper-title">
+        Automation, Unionization, and Worker Welfare
+      </div>
+
+      <div class="coauthor">
+        with A. Arda Gitmez
+      </div>
+
+      <div class="status">
+        Working Paper
+      </div>
+
+
+      <div class="abstract">
+
+        <p>
+          Automation pulls on workers in two directions. On the one hand,
+          it can depress wages and weaken unions; on the other, productivity
+          gains can expand labor-market opportunities that indirectly benefit
+          workers.
+        </p>
+
+        <p>
+          We develop a model to study when each force dominates and examine
+          policies designed to protect workers while preserving the benefits
+          of technological change.
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <h3>Research Interests</h3>
+
+    <p class="interests">
+      Labor Economics · Political Economy · Technological Change ·
+      Automation · Unions · Inequality
+    </p>
+
+  </section>
+
+
+
+  <!-- CV -->
+
+  <section id="cv">
+
+    <h2>Curriculum Vitae</h2>
+
+    <p>
+      You can view or download my current curriculum vitae below.
+    </p>
+
+    <a class="button"
+       href="Kardelen_Sural_CV.pdf"
+       target="_blank">
+       View CV
+    </a>
+
+  </section>
+
+
+
+  <!-- CONTACT -->
+
+  <section id="contact" class="contact">
+
+    <h2>Contact</h2>
+
+    <p>
+      Carnegie Mellon University<br>
+      Tepper School of Business
+    </p>
+
+    <p>
+      Email:
+      <a href="mailto:ksural@andrew.cmu.edu">
+        ksural@andrew.cmu.edu
+      </a>
+    </p>
+
+  </section>
+
+
+</main>
+
+
+
+<footer>
+
+  © 2026 Kardelen Sural
+
+</footer>
+
 
 </body>
 </html>
