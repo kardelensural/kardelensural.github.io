@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +12,6 @@
   >
 
   <style>
-
     * {
       box-sizing: border-box;
     }
@@ -26,7 +24,6 @@
       margin: 0;
       background: #ffffff;
       color: #222222;
-
       font-family:
         -apple-system,
         BlinkMacSystemFont,
@@ -35,7 +32,6 @@
         Helvetica,
         Arial,
         sans-serif;
-
       line-height: 1.7;
     }
 
@@ -43,15 +39,12 @@
       color: inherit;
     }
 
-    /* =========================
-       NAVIGATION
-    ========================== */
+    /* NAVIGATION */
 
     nav {
       position: sticky;
       top: 0;
       z-index: 1000;
-
       background: rgba(255, 255, 255, 0.96);
       border-bottom: 1px solid #e6e6e6;
     }
@@ -60,7 +53,6 @@
       max-width: 1000px;
       margin: 0 auto;
       padding: 17px 30px;
-
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -70,7 +62,6 @@
       font-family: Georgia, "Times New Roman", serif;
       font-size: 20px;
       font-weight: 600;
-
       text-decoration: none;
       color: #222;
     }
@@ -91,14 +82,12 @@
       color: #000;
     }
 
-    /* =========================
-       MAIN
-    ========================== */
+    /* MAIN */
 
     main {
       max-width: 940px;
       margin: 0 auto;
-      padding: 80px 30px 40px 30px;
+      padding: 80px 30px 40px;
     }
 
     section {
@@ -106,9 +95,7 @@
       scroll-margin-top: 90px;
     }
 
-    /* =========================
-       INTRO
-    ========================== */
+    /* INTRO */
 
     .intro {
       margin-bottom: 95px;
@@ -122,12 +109,10 @@
     }
 
     h1 {
-      margin: 0 0 10px 0;
-
+      margin: 0 0 10px;
       font-family: Georgia, "Times New Roman", serif;
       font-size: 52px;
       font-weight: 500;
-
       line-height: 1.15;
       letter-spacing: -1px;
     }
@@ -155,9 +140,7 @@
       margin-bottom: 14px;
     }
 
-    /* =========================
-       PROFILE PHOTO
-    ========================== */
+    /* PROFILE PHOTO */
 
     .photo-container {
       display: flex;
@@ -167,17 +150,13 @@
     .profile-photo {
       width: 280px;
       height: 350px;
-
       object-fit: cover;
       object-position: center 42%;
-
       border-radius: 8px;
       display: block;
     }
 
-    /* =========================
-       BUTTONS
-    ========================== */
+    /* BUTTONS */
 
     .links {
       margin-top: 28px;
@@ -185,22 +164,15 @@
 
     .button {
       display: inline-block;
-
       padding: 8px 16px;
       margin-right: 8px;
       margin-bottom: 8px;
-
       border: 1px solid #333;
       border-radius: 5px;
-
       color: #222;
       text-decoration: none;
-
       font-size: 14px;
-
-      transition:
-        background 0.2s ease,
-        color 0.2s ease;
+      transition: background 0.2s ease, color 0.2s ease;
     }
 
     .button:hover {
@@ -208,24 +180,19 @@
       color: #fff;
     }
 
-    /* =========================
-       SECTION HEADINGS
-    ========================== */
+    /* SECTION HEADINGS */
 
     h2 {
-      margin: 0 0 30px 0;
+      margin: 0 0 30px;
       padding-bottom: 10px;
-
       font-family: Georgia, "Times New Roman", serif;
       font-size: 31px;
       font-weight: 500;
-
       border-bottom: 1px solid #dddddd;
     }
 
     h3 {
-      margin: 30px 0 8px 0;
-
+      margin: 30px 0 8px;
       font-family: Georgia, "Times New Roman", serif;
       font-size: 22px;
       font-weight: 600;
@@ -235,9 +202,7 @@
       font-size: 16.5px;
     }
 
-    /* =========================
-       RESEARCH
-    ========================== */
+    /* RESEARCH */
 
     .paper {
       margin-bottom: 45px;
@@ -287,9 +252,7 @@
       color: #444;
     }
 
-    /* =========================
-       EDUCATION
-    ========================== */
+    /* EDUCATION */
 
     .education-item {
       margin-bottom: 27px;
@@ -318,18 +281,14 @@
       font-size: 15px;
     }
 
-    /* =========================
-       OUTSIDE ECONOMICS
-    ========================== */
+    /* OUTSIDE ECONOMICS */
 
     .outside-text {
       color: #444;
       max-width: 830px;
     }
 
-    /* =========================
-       CONTACT
-    ========================== */
+    /* CONTACT */
 
     .contact p {
       color: #444;
@@ -346,27 +305,20 @@
       border-color: #000;
     }
 
-    /* =========================
-       FOOTER
-    ========================== */
+    /* FOOTER */
 
     footer {
       max-width: 940px;
       margin: 0 auto;
-      padding: 28px 30px 40px 30px;
-
+      padding: 28px 30px 40px;
       border-top: 1px solid #e5e5e5;
-
       color: #888;
       font-size: 13px;
     }
 
-    /* =========================
-       MOBILE
-    ========================== */
+    /* MOBILE */
 
     @media (max-width: 760px) {
-
       .nav-container {
         padding: 15px 22px;
       }
@@ -376,7 +328,7 @@
       }
 
       main {
-        padding: 50px 22px 20px 22px;
+        padding: 50px 22px 20px;
       }
 
       .intro {
@@ -408,44 +360,24 @@
       section {
         margin-bottom: 60px;
       }
-
     }
-
   </style>
-
 </head>
-
 
 <body>
 
-  <!-- =========================
-       NAVIGATION
-  ========================== -->
+  <!-- NAVIGATION -->
 
   <nav>
-
     <div class="nav-container">
-
-      <a
-        href="#about"
-        class="nav-name"
-      >
+      <a href="#about" class="nav-name">
         Kardelen Sural
       </a>
 
       <div class="nav-links">
-
-        <a href="#about">
-          About
-        </a>
-
-        <a href="#research">
-          Research
-        </a>
-
-        <a href="#education">
-          Education
-        </a>
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#education">Education</a>
 
         <a
           href="kardelen_cv__Copy_.pdf"
@@ -455,44 +387,20 @@
           CV
         </a>
 
-        <a href="#outside">
-          Outside Economics
-        </a>
-
-        <a href="#contact">
-          Contact
-        </a>
-
+        <a href="#outside">Outside Economics</a>
+        <a href="#contact">Contact</a>
       </div>
-
     </div>
-
   </nav>
-
-
-  <!-- =========================
-       MAIN CONTENT
-  ========================== -->
 
   <main>
 
+    <!-- ABOUT -->
 
-    <!-- =========================
-         ABOUT
-    ========================== -->
-
-    <section
-      class="intro"
-      id="about"
-    >
-
+    <section class="intro" id="about">
       <div class="intro-grid">
-
         <div>
-
-          <h1>
-            Kardelen Sural
-          </h1>
+          <h1>Kardelen Sural</h1>
 
           <div class="position">
             PhD Student in Economics
@@ -503,22 +411,19 @@
           </div>
 
           <div class="intro-text">
-
             <p>
               I am a PhD student in Economics at Carnegie Mellon University.
-              My research interests lie at the intersection of macroeconomics, labor economics,
-              political economy, and technological change.
+              My research interests lie at the intersection of macroeconomics,
+              labor economics, political economy, and technological change.
             </p>
 
             <p>
               I am particularly interested in automation, labor-market
               institutions, unions, and inequality.
             </p>
-
           </div>
 
           <div class="links">
-
             <a
               class="button"
               href="mailto:kardelensural1@gmail.com"
@@ -543,49 +448,31 @@
             >
               GitHub
             </a>
-
           </div>
-
         </div>
 
-
         <div class="photo-container">
-
           <img
             src="profile.jpg"
             alt="Kardelen Sural"
             class="profile-photo"
           >
-
         </div>
-
       </div>
-
     </section>
 
-
-    <!-- =========================
-         RESEARCH
-    ========================== -->
+    <!-- RESEARCH -->
 
     <section id="research">
-
-      <h2>
-        Research
-      </h2>
-
+      <h2>Research</h2>
 
       <div class="paper">
-
         <div class="paper-title">
           Unions in the Age of Automation
         </div>
 
-
         <div class="coauthor">
-
           with
-
           <a
             href="https://www.ardagitmez.com"
             target="_blank"
@@ -593,9 +480,7 @@
           >
             A. Arda Gitmez
           </a>
-
           and
-
           <a
             href="https://www.ozlemkina.com"
             target="_blank"
@@ -603,17 +488,13 @@
           >
             Özlem Kına
           </a>
-
         </div>
-
 
         <div class="status">
           Work in progress
         </div>
 
-
         <div class="abstract">
-
           <p>
             Automation pulls on workers in two directions. On one hand,
             it can depress wages and weaken unions; on the other, the
@@ -640,37 +521,51 @@
             reproduces the on-path allocation of a full automation ban while
             leaving non-union matches free to automate.
           </p>
-
         </div>
-
       </div>
 
+      <div class="paper">
+        <div class="paper-title">
+          Agency independence, the revolving door, and the regulator’s budget
+        </div>
 
-      <h3>
-        Research Interests
-      </h3>
+        <div class="coauthor">
+          with Selman Erol and Stephen Spear
+        </div>
+
+        <div class="status">
+          Work in progress
+        </div>
+
+        <div class="abstract">
+          <p>
+            A regulator can keep its experts from trading bad news for future
+            industry jobs only if it can pay them to report, and the legislature
+            controls its budget. We study a dynamic game in which a firm lobbies
+            an elected legislator who sets that budget. Under legislative control
+            the firm can buy a zero budget with campaign contributions and capture
+            the experts. An independent agency prevents capture exactly when its
+            statutory budget outbids the revolving door, and we characterize the
+            optimal statutory budget when it must be set before the regulated
+            industry is known.
+          </p>
+        </div>
+      </div>
+
+      <h3>Research Interests</h3>
 
       <p class="research-interests">
         Labor Economics · Political Economy · Technological Change ·
         Automation · Unions · Inequality
       </p>
-
     </section>
 
-
-    <!-- =========================
-         EDUCATION
-    ========================== -->
+    <!-- EDUCATION -->
 
     <section id="education">
-
-      <h2>
-        Education
-      </h2>
-
+      <h2>Education</h2>
 
       <div class="education-item">
-
         <div class="education-degree">
           Ph.D. in Economics
         </div>
@@ -682,12 +577,9 @@
         <div class="education-date">
           2026 – Present
         </div>
-
       </div>
 
-
       <div class="education-item">
-
         <div class="education-degree">
           M.A. in Economics
         </div>
@@ -699,12 +591,9 @@
         <div class="education-date">
           2026
         </div>
-
       </div>
 
-
       <div class="education-item">
-
         <div class="education-degree">
           B.A. in Economics
         </div>
@@ -716,21 +605,13 @@
         <div class="education-date">
           2024
         </div>
-
       </div>
-
     </section>
 
-
-    <!-- =========================
-         OUTSIDE ECONOMICS
-    ========================== -->
+    <!-- OUTSIDE ECONOMICS -->
 
     <section id="outside">
-
-      <h2>
-        Outside Economics
-      </h2>
+      <h2>Outside Economics</h2>
 
       <p class="outside-text">
         Outside economics, music, cinema, and cooking are an important
@@ -740,38 +621,19 @@
         comes with playing the violin, and practicing gives me a rewarding way
         to focus and step away from academic work.
       </p>
-
       <p class="outside-text">
-        Cinema is another long-standing interest of mine, and I have a
-        particular affection for Studio Ghibli films. I am especially drawn
-        to their distinctive visual storytelling and to the way seemingly
-        simple stories can explore themes of memory, childhood, nature,
-        identity, and human relationships.
-      </p>
-
-      <p class="outside-text">
-        I also love cooking and experimenting in the kitchen. Over time, I have
+        I love cooking and experimenting in the kitchen. Over time, I have
         collected and developed recipes that I especially enjoy and compiled
         them into my own recipe book. For me, cooking is both a creative outlet
         and a way of preserving the dishes, ideas, and small discoveries that
         I want to return to.
       </p>
-
     </section>
 
+    <!-- CONTACT -->
 
-    <!-- =========================
-         CONTACT
-    ========================== -->
-
-    <section
-      id="contact"
-      class="contact"
-    >
-
-      <h2>
-        Contact
-      </h2>
+    <section id="contact" class="contact">
+      <h2>Contact</h2>
 
       <p>
         Carnegie Mellon University<br>
@@ -795,22 +657,13 @@
           github.com/kardelensural
         </a>
       </p>
-
     </section>
 
-
   </main>
-
-
-  <!-- =========================
-       FOOTER
-  ========================== -->
 
   <footer>
     © 2026 Kardelen Sural
   </footer>
 
-
 </body>
-
 </html>
